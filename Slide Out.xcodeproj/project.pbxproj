@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2387A17E2301F5DE005C149E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2387A17D2301F5DE005C149E /* MapKit.framework */; };
 		23E54756230185A200FC3B81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E54755230185A200FC3B81 /* AppDelegate.swift */; };
 		23E54758230185A200FC3B81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E54757230185A200FC3B81 /* ViewController.swift */; };
 		23E5475B230185A200FC3B81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E54759230185A200FC3B81 /* Main.storyboard */; };
 		23E5475D230185A300FC3B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E5475C230185A300FC3B81 /* Assets.xcassets */; };
 		23E54760230185A400FC3B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E5475E230185A300FC3B81 /* LaunchScreen.storyboard */; };
+		23E54768230186D600FC3B81 /* ExtensionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E54767230186D600FC3B81 /* ExtensionMap.swift */; };
+		23E5476B23018CB300FC3B81 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E5476923018CB300FC3B81 /* CardViewController.swift */; };
+		23E5476C23018CB300FC3B81 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E5476A23018CB300FC3B81 /* CardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2387A17D2301F5DE005C149E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		23E54752230185A200FC3B81 /* Slide Out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slide Out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E54755230185A200FC3B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23E54757230185A200FC3B81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		23E5475C230185A300FC3B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23E5475F230185A400FC3B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23E54761230185A400FC3B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E54767230186D600FC3B81 /* ExtensionMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMap.swift; sourceTree = "<group>"; };
+		23E5476923018CB300FC3B81 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		23E5476A23018CB300FC3B81 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2387A17E2301F5DE005C149E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2387A17C2301F5DE005C149E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2387A17D2301F5DE005C149E /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2387A17F23020AEA005C149E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E54759230185A200FC3B81 /* Main.storyboard */,
+				23E5475E230185A300FC3B81 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		2387A18023020B0D005C149E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				23E54767230186D600FC3B81 /* ExtensionMap.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		23E54749230185A200FC3B81 = {
 			isa = PBXGroup;
 			children = (
 				23E54754230185A200FC3B81 /* Slide Out */,
 				23E54753230185A200FC3B81 /* Products */,
+				2387A17C2301F5DE005C149E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +89,14 @@
 		23E54754230185A200FC3B81 /* Slide Out */ = {
 			isa = PBXGroup;
 			children = (
+				23E54761230185A400FC3B81 /* Info.plist */,
 				23E54755230185A200FC3B81 /* AppDelegate.swift */,
 				23E54757230185A200FC3B81 /* ViewController.swift */,
-				23E54759230185A200FC3B81 /* Main.storyboard */,
+				23E5476923018CB300FC3B81 /* CardViewController.swift */,
+				23E5476A23018CB300FC3B81 /* CardViewController.xib */,
+				2387A17F23020AEA005C149E /* Storyboard */,
+				2387A18023020B0D005C149E /* Extension */,
 				23E5475C230185A300FC3B81 /* Assets.xcassets */,
-				23E5475E230185A300FC3B81 /* LaunchScreen.storyboard */,
-				23E54761230185A400FC3B81 /* Info.plist */,
 			);
 			path = "Slide Out";
 			sourceTree = "<group>";
@@ -96,6 +133,11 @@
 				TargetAttributes = {
 					23E54751230185A200FC3B81 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E5476C23018CB300FC3B81 /* CardViewController.xib in Resources */,
 				23E54760230185A400FC3B81 /* LaunchScreen.storyboard in Resources */,
 				23E5475D230185A300FC3B81 /* Assets.xcassets in Resources */,
 				23E5475B230185A200FC3B81 /* Main.storyboard in Resources */,
@@ -135,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E5476B23018CB300FC3B81 /* CardViewController.swift in Sources */,
 				23E54758230185A200FC3B81 /* ViewController.swift in Sources */,
 				23E54756230185A200FC3B81 /* AppDelegate.swift in Sources */,
+				23E54768230186D600FC3B81 /* ExtensionMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
